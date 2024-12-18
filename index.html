@@ -18,7 +18,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #4CAF50, #2F4F4F);
+            background: linear-gradient(135deg, #1F1C2C, #928DAB);
             color: white;
             overflow: hidden;
         }
@@ -27,20 +27,25 @@
             text-align: center;
             padding: 2rem;
             border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            background: rgba(255, 255, 255, 0.1);
+            box-shadow: inset -8px -8px 20px rgba(255, 255, 255, 0.1),
+                        inset 8px 8px 20px rgba(0, 0, 0, 0.3),
+                        0 10px 20px rgba(0, 0, 0, 0.2),
+                        0 0 15px #8B00FF;
+            background: #1E1E2A;
             backdrop-filter: blur(10px);
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            text-shadow: 0 0 10px #8B00FF, 0 0 20px #00FFFF;
         }
 
         p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            color: #F0F8FF;
+            color: #E0FFFF;
+            text-shadow: 0 0 10px #8B00FF;
         }
 
         .cta-button {
@@ -49,17 +54,22 @@
             font-size: 1rem;
             font-weight: 600;
             text-transform: uppercase;
-            color: #4CAF50;
-            background: white;
+            color: #1E1E2A;
+            background: linear-gradient(145deg, #8B00FF, #00FFFF);
             border: none;
-            border-radius: 8px;
+            border-radius: 50px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4),
+                        -5px -5px 10px rgba(255, 255, 255, 0.2),
+                        0 0 15px #8B00FF;
             cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .cta-button:hover {
-            background-color: #4CAF50;
-            color: white;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                        -5px -5px 15px rgba(255, 255, 255, 0.3),
+                        0 0 25px #00FFFF;
         }
 
         .animated-bg {
